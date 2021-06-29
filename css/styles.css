@@ -146,7 +146,29 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
-
+.section{
+  padding: 5rem 0rem;
+}
+.section-title{
+  text-align: center;
+margin-bottom: 4rem;
+}
+.section-title h2{
+  text-transform: uppercase;
+}
+.section-title span{
+  color: var(--clr-primary-5);
+}
+.section-center{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width:992px){
+  .section-center{
+    width: 95vw;
+  }
+}
 /*
 =============== 
 Navbar
@@ -207,6 +229,21 @@ Hero
 About
 ===============
 */
+.about-img,.about-info{
+  margin-top: 2rem;
+}
+@media screen and (min-width:900px){
+  .about-center{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-img,.about-info{
+    flex: 0 0 calc(50% - 2rem);
+    align-self:center ;
+    margin-bottom: 0px;
+  }
+}
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
